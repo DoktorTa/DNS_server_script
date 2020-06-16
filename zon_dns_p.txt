@@ -12,3 +12,7 @@ site1       A         13.13.13.13
 site2       A         14.14.14.14
 ts          NS        ns.ts
 ns.ts       A         15.15.15.15
+
+
+news        CNAME     10 newes.com.
+@           MX      10 land-5.com
