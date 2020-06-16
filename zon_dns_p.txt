@@ -1,4 +1,5 @@
 $TTL 1d
+$ORIGIN example.com.
 
 @           SOA       ns.example.com. user.example.com. (2 1w 1d 4w 1d)
 @           NS        ns
