@@ -1,0 +1,13 @@
+$TTL 1d
+
+@           SOA       ns.example.com. user.example.com. (2 1w 1d 4w 1d)
+@           NS        ns
+ns          A         10.10.10.11
+@           A         10.10.10.12
+www         A         10.10.10.13
+
+
+site1       A         13.13.13.13
+site2       A         14.14.14.14
+ts          NS        ns.ts
+ns.ts       A         15.15.15.15
