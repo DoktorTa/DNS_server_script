@@ -21,8 +21,8 @@ class Zone_parse:
 
     """
 
-    def __init__(self, path):
-        self.generation_zone_object(path)
+    def __init__(self):
+        pass
 
     # Генерирует обьект зоны на файле
     def generation_zone_object(self, path: str):
@@ -50,6 +50,7 @@ class Zone_parse:
                 elif "MX" in line_list:
                     z.records_mx.append(self.record_mx_recor(line_list, addition))
         print(str(z))
+        return z
 
     # Конвертирует время
     @staticmethod

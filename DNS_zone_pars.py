@@ -124,7 +124,10 @@ class DNS_answer:
 
 
 if __name__ == '__main__':
-    z = Zone_parse(r"zon_dns_p.txt")
+    z = Zone_parse()
+    zone = z.generation_zone_object(r"zon_dns_p.txt")
+    r, i, k = zone.serch_soa_addition("ns.example.com.")
+    print(r, i, k)
     # dns = DNS_answer()
     # pkg = "000201000001000000000000026531027275000002"
     # print(dns.parse_pkg(pkg))
